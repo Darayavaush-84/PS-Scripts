@@ -167,7 +167,7 @@ $UninstallButton.Add_Click({
 
 # Added Info button event handler
 $InfoButton.Add_Click({
-    [System.Windows.MessageBox]::Show("AddPrinter Tool V 1.0 - Developed by Dario Barbarino for Lungenclinic GmbH, All Rights Reserved", "Info")
+    [System.Windows.MessageBox]::Show("AddPrinter Tool V 1.0 - Developed by Dario Barbarino, All Rights Reserved", "Info")
 })
 
 $SearchBox.Add_KeyDown({
