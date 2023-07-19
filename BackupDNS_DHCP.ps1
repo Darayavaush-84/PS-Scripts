@@ -1,4 +1,21 @@
-﻿#Requires -RunAsAdministrator
+<#
+.SYNOPSIS
+    This PowerShell script by Dario Barbarino automates the backup and maintenance of DNS and DHCP server data on a Windows server. 
+
+.DESCRIPTION
+    The script sets up unique directories for each backup session, based on the current date and time. 
+    It automatically deletes any backups older than six months, aiding in storage management. 
+    The script subsequently creates backups for the DHCP database and DNS zones on the server.
+    It also generates log files for each backup operation, recording the success or failure status.
+
+    This tool is invaluable for system administrators, as it helps facilitate regular server configuration backups, 
+    ensuring quick recovery in case of data loss or server failure.
+
+.AUTHOR
+    Dario Barbarino
+#>
+
+ #Requires -RunAsAdministrator, execute it directly from the Domain Controller
 
 # Set backup directory paths
 $backupRoot = "C:\BackupDNS_DHCP"
